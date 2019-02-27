@@ -35,6 +35,12 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio.hbs', {
+        portfolio: "somethings",
+    });
+});
+
 // app.use((req, res, next) => {
 //     res.render('maintenance.hbs');
 // });
